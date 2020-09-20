@@ -8,9 +8,11 @@
     <title>Координаты</title>
 </head>
 <body>
+ <a href="/"><button>MAP</button></a>
+
     <div>
         {% for point in coords%}
-            <h3>координаты (X,Y): {{ point.pointer.y }} {{point.pointer.x}}</h3>
+            <h3>координаты : {{ point.pointer.y|safe }} {{point.pointer.x|safe }}</h3>
         {% endfor %}
     </div>
 
